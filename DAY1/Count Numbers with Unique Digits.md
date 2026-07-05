@@ -50,6 +50,7 @@ A number is considered to have no repeated digits if every digit from 0 to 9 app
 
 Code:
 
+``` java
 class Solution {
     public static int countUniqueDigitNumbers(int n1, int n2) {
         int ans = 0;
@@ -79,3 +80,6 @@ class Solution {
         return ans;
     }
 }
+
+
+```
