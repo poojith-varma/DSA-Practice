@@ -1,0 +1,41 @@
+Problem Statement:
+
+
+Code:
+
+``` java
+
+class Solution {
+    public static String findMissingLetters(String str) {
+
+        boolean[] visited = new boolean[26];
+        boolean repeated = false;
+        String lstr = str.toLowerCase();
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=0; i<str.length(); i++){
+            char ch = lstr.charAt(i);
+            if(ch>='a' && ch<='z'){
+                visited[ch - 'a'] = true;
+            }
+        }
+
+        for(int i=0; i<26; i++){
+            if(visited[i]==false){
+                
+                sb.append((char)(i + 'a'));
+            }
+            
+        }
+
+        if(sb.length()==0){
+            return "0";
+        }
+
+
+        return sb.toString();
+    }
+}
+
+
+```
