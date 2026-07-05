@@ -61,6 +61,9 @@ You are given an array $Arr[]$ of $N$ integers. Your task is to rearrange the ar
 
 Code:
 
+
+```java
+
 class Solution {
     public static int[] solvemoveMultiplesOfTen(int n, int[] arr) {
         int[] ans = new int[n];
@@ -82,3 +85,5 @@ class Solution {
         return ans;
     }
 }
+
+```
